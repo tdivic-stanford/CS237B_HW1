@@ -321,7 +321,7 @@ def train_actor_critic(sess):
     plt.title('History of Episode Reward')
     if not os.path.exists('../plots'):
         os.makedirs('../plots')
-    plt.savefig('../plots/p2_reward_history.png')
+    plt.savefig('../plots/p3_reward_history.png')
     plt.show()
     run_actor(env, actor, NUM_TEST_EPISODES)
 

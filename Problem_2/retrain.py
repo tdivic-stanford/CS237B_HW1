@@ -29,7 +29,6 @@ def get_bottleneck_dataset(model, img_dir, img_size):
         # For each iteration append the bottleneck output as well as the label to the respective list
         # bottelneck_x_l -> list of tensors with dimension [1, bottleneck_size]
         # bottelneck_y_l -> list of tensors with dimension [1, num_labels]
-        # Fill in the parts indicated by #FILL#. No additional lines are required.
 
         
 
@@ -63,11 +62,10 @@ def retrain(image_dir):
     # 1. Get the size of the bottleneck tensor. Hint: You can get the shape of a tensor via tensor.get_shape().as_list()
     # 2. Define a new tf.keras Model which is a linear classifier
     #   2.1 Define a keras Input (retrain_input)
-    #   2.2 Define the trainable layer (retrain_layer)
+    #   2.2 Define the trainable layer (retrain_layer) and name it "classifier" using the name argument
     #   2.3 Define the activation function (retrain activation)
     #   2.4 Create a new model
     # 3. Define a loss and a evaluation metric
-    # Fill in the parts indicated by #FILL#. No additional lines are required.
 
     
 
@@ -95,7 +93,6 @@ def retrain(image_dir):
     ######### Your code starts here #########
     # We now want to create the full model using the newly trained classifier
     # Use tensorflow keras Sequential to stack the base_model and the new layers
-    # Fill in the parts indicated by #FILL#. No additional lines are required.
     
 
 

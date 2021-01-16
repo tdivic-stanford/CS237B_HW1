@@ -67,7 +67,6 @@ def compute_convolutional_KxK_classification(model, image_path):
     conv_model = tf.keras.Model(model.layers[0].inputs, model.layers[0].layers[-2].output)
 
     ######### Your code starts here #########
-    # Fill in the parts indicated by #FILL#. No additional lines are required.
     # We want to use the output of the last convolution layer which has the shape [bs, K, K, bottleneck_size]
 
 
@@ -100,7 +99,6 @@ def compute_and_plot_saliency(model, image_path):
 
     with tf.GradientTape() as t:
         ######### Your code starts here #########
-        # Fill in the parts indicated by #FILL#. No additional lines are required.
 
 
 
